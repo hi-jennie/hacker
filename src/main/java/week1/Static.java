@@ -14,6 +14,8 @@ public class Static {
     static int H = scan.nextInt();
     static boolean flag = true;
 
+    // static initialization block
+    // it will be executed when the class is loaded
     static {
         if (B <= 0 || H <= 0 || B * H <= 0) {
             flag = false;
@@ -21,6 +23,8 @@ public class Static {
         }
     }
 
+    // method with static only haa access to static field;
+    // so inside the main method, we have to use static to access the static field
     public static void main(String[] args) {
         if (flag) {
             int area = B * H;
