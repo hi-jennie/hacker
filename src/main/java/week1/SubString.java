@@ -18,5 +18,7 @@ public class SubString {
         // if only pass one argument, it means from the current index to the end of the whole string
         String subString = S.substring(startIndex, endIndex);
         System.out.println(subString);
+
+        // StringBuilder str = new StringBuilder("GeeksForGeeks");
     }
 }
