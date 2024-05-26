@@ -18,8 +18,10 @@ public class JavaHasNext {
             String str = scan.nextLine();
             results.add(str);
         }
-        for (String result : results) {
-            System.out.println(result);
+        
+        for (int i = 0; i < results.size(); i++) {
+            int m = i + 1;
+            System.out.println(m + " " + results.get(i));
         }
     }
 }
