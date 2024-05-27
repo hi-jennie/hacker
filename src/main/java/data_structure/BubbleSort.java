@@ -11,6 +11,10 @@ import java.util.Scanner;
 public class BubbleSort {
     // 在顺序序列中，任意一对相邻元素总是顺序的
     // 在无序序列中，总有一对相邻元素总是无序的
+
+    // 不变性：after k rounds of comparison, the last k elements are the largest k elements in the array
+    // 单调性：after k rounds of comparison，the scale of the problem will be reduced to n-k
+    // 正确性：we are definitely to figure out correct results after n-1 rounds of comparison
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int intNumber = scan.nextInt();
