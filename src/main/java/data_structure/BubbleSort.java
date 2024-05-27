@@ -23,6 +23,7 @@ public class BubbleSort {
             int currentInt = scan.nextInt();
             results[i] = currentInt;
         }
+        System.out.println("total: " + sum(results));
         // nested loop
         // the outer loop is used to control the number of rounds of the comparison
         for (int i = 0; i < results.length; i++) {
@@ -43,6 +44,15 @@ public class BubbleSort {
         }
 
 
+    }
+
+    public static int sum(int[] arr) {
+        // 和bubble sort一样，进过k次计算之后，问题的规模都会所见之n-k
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
     }
 
 }
