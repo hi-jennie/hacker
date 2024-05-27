@@ -9,6 +9,8 @@ import java.util.Scanner;
  * @date 2024/5/27 14:44
  **/
 public class BubbleSort {
+    // 在顺序序列中，任意一对相邻元素总是顺序的
+    // 在无序序列中，总有一对相邻元素总是无序的
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int intNumber = scan.nextInt();
