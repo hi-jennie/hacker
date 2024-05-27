@@ -7,11 +7,15 @@ package data_structure;
  * @date 2024/5/27 17:08
  **/
 public class RecursiveSum {
-    // decrease and conquer
+    // recursion trace
     public static int calculateSumUsingRecursion(int[] arr, int i) {
         if (i == arr.length) {
             return 0;
         }
+//            一样的效果
+//        if (i == arr.length -1) {
+//            return arr[i];
+//        }
         return arr[i] + calculateSumUsingRecursion(arr, i + 1);
     }
 
