@@ -8,7 +8,7 @@ package data_structure;
  **/
 public class Fib {
     public static void main(String[] args) {
-        System.out.println(fib(5));
+        System.out.println(fib2(5, 1));
     }
 
     // 需要2^n的时间复杂度,不推荐
@@ -22,7 +22,7 @@ public class Fib {
     // 线性递归的方法是
     public static int fib2(int n, int prev) {
         if (n == 0) {
-            prev = 1;
+
             return n;
         } else {
             int prevPrev = prev;

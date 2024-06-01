@@ -1,4 +1,4 @@
-package data_structure;
+package week1;
 
 /**
  * @author rd_qinglin_mu
@@ -6,7 +6,7 @@ package data_structure;
  * @单据标识
  * @date 2024/5/26 16:01
  **/
-class Calendar {
+public class Calendar {
     public static String findDay(int month, int day, int year) {
         java.util.Calendar calendar = java.util.Calendar.getInstance();
         // 注意，Calendar 类的月份是从 0 开始的，所以我们需要将输入的月份减 1。
