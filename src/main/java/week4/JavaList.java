@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 /**
  * @author rd_qinglin_mu
- * @description list
+ * @description java list
  * @单据标识
- * @date 2024/6/12 21:28
+ * @date 2024/6/27 15:03
  **/
-public class List {
+public class JavaList {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> results = new ArrayList<>();
