@@ -30,21 +30,21 @@ public class JavaInnerClass {
     // pay attention to the difference between static inner class and member inner class
     // Static Inner Class
     // inside the static inner class, we can only have access to static fields and methods of the outer class
-    public class OuterClass {
-        private static final String outerStaticField = "Outer static field";
-
-        public static void main(String[] args) {
-            // we can create static inner class without creating an instance of the outer class
-            OuterClass.StaticInnerClass inner = new OuterClass.StaticInnerClass();
-            inner.printOuterStaticField();
-        }
-
-        public static class StaticInnerClass {
-            public void printOuterStaticField() {
-                System.out.println(outerStaticField);
-            }
-        }
-    }
+//    public class OuterClass {
+//        private static final String outerStaticField = "Outer static field";
+//
+//        public static void main(String[] args) {
+//            // we can create static inner class without creating an instance of the outer class
+//            OuterClass.StaticInnerClass inner = new OuterClass.StaticInnerClass();
+//            inner.printOuterStaticField();
+//        }
+//
+//        public static class StaticInnerClass {
+//            public void printOuterStaticField() {
+//                System.out.println(outerStaticField);
+//            }
+//        }
+//    }
 
     // Local Inner Class - class that is defined inside a method.
     public class OuterClassB {
