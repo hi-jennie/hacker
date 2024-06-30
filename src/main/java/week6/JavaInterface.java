@@ -16,12 +16,12 @@ public class JavaInterface {
         System.out.println(myCal.divisor_sum(n));
     }
 
-    // 内部接口
+    //
     public interface AdvancedArithmetic {
         int divisor_sum(int n);
     }
 
-    // 内部类——这里的static不能忘记，否则无法在JavaInterface类内部中调用
+    // inner class,static should be added or else we can't use it inside the JavaInterface class
     public static class MyCalculator implements AdvancedArithmetic {
         @Override
         public int divisor_sum(int n) {
